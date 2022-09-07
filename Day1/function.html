@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" onclick="msg()" value="call function"/>  
+    <br>
+    <input type="button" value="click to get cube of 4" onclick="getcube(4)"/>
+
+    <script>
+        function msg()
+        {  
+            alert("hello! this is message");  
+        }  
+
+        function getcube(number)
+        {  
+            alert(number*number*number);  
+        }  
+
+        function getInfo()
+        {  
+            return "<br/>hello Sujit! How r u?<br/>";  
+        }
+        document.write(getInfo()); 
+
+        var add=new Function("num1","num2","return num1+num2");  
+        document.write(add(2,5));  
+
+        //anonymous function
+        let oddOrEven = function(number) 
+        {
+            if(number%2==0)
+            {
+                return "Number is Even";
+            }
+            else
+            {
+                return "Number is Odd";
+            }
+        }
+        document.write("<br/>"+oddOrEven(5)+"<br/>");
+
+        //fat arrow
+        let myFunction = (a, b) => a * b;
+        document.write(myFunction(5,3)+"<br/>");
+        /*It gets shorter! If the function has only one statement, and the statement returns a value, we can 
+        remove the brackets and the return keyword */
+        
+    </script>
+</body>
+</html>

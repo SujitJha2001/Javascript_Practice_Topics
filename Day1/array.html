@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for loop
+        var arr1 = [1,"Sujit",true,null];
+        document.write("<ul>FOR-LOOP");
+        for(var i=0;i<arr1.length;i++)
+        {
+            document.write("<li>"+arr1[i]+"</li>");
+        }
+        document.write("</ul>");
+
+        //for of
+        var arr2 = new Array(3);
+        for(let j=0;j<3;j++)
+        {
+            arr2[j] = prompt("Enter value : ");
+        }
+        document.write("<ul>FOR-OF");
+        for(let element of arr2)
+        {
+            document.write("<li>"+element+"</li>");
+        }
+        document.write("</ul>");
+
+        //for in
+        document.write("<ul>FOR-IN");
+        for(let element in arr2)
+        {
+            document.write("<li>"+arr2[element]+"</li>");
+        }
+        document.write("</ul>");
+
+    </script>
+</body>
+</html>
