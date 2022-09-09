@@ -12,7 +12,8 @@
     <script>
     // Selecting elements with class test
     var matches = document.getElementsByClassName("test");
-        
+    console.log(matches);
+    
     // Displaying the selected elements count
     document.write("Number of selected elements: " + matches.length);
      
@@ -24,8 +25,12 @@
         
     // Highlighting each element's background through loop
     for(var elem in matches) {  
-        matches[elem].style.background = "yellow";
+        matches[elem].style="background :green";
     }
+
+    var pTags = document.getElementsByTagName("p"); 
+    console.log(pTags.length);
+    pTags[1].style.color="blue";
     </script>
 </body>
 </html>
