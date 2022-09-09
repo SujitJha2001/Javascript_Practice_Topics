@@ -5,7 +5,7 @@
     <title>JS Select Elements with CSS Selectors</title>
 </head>
 <body>
-    <button >jscbjsd</button>
+    <button >Button1</button>
 
     <ul>
         <li>Bread</li>
@@ -16,9 +16,24 @@
     <script>
     var btn = document.body.children[0];
     document.write(btn.textContent+"<br/>");
-    // Selecting all li elements
-    var matches = document.querySelectorAll("ul li");
-     
+    // Selecting first li element using querySelector
+    var firstLi = document.querySelector("ul li");
+    firstLi.style.background="red";
+
+    // Selecting second li element using querySelector
+    var secondLi = document.querySelectorAll("ul li:nth-child(2)"); 
+    secondLi[0].style.background="green";
+    
+
+    /*                      OR                          */
+    /*                   2nd Way                        */
+    
+    // Selecting third li element using querySelector
+    var thirdLi = document.querySelectorAll("ul li"); 
+    thirdLi[2].style.background="blue";
+
+    matches = document.querySelectorAll("ul li");
+
     // Printing the number of selected li elements
     document.write("Number of selected elements: " + matches.length + "<hr>")
      
@@ -31,6 +46,8 @@
     // Applying line through style to first li element with class tick
     matches = document.querySelectorAll("ul li.tick");
     matches[0].style.textDecoration = "line-through";
+
+    //Applying colot to the third list-item
     </script>
 </body>
 </html>
