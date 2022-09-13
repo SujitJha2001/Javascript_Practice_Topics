@@ -1,6 +1,7 @@
 //program to determine the frequency of element and represent it in object
 
-/*reduce() -> it returns a single value and accepts 2 arguments one is callback function and the other is
+/*reduce() -> it returns a single value"The accumulated result from the last call of the callback function." 
+and accepts 2 arguments one is callback function and the other is
 initial value
 */
 var pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
@@ -30,4 +31,5 @@ ans = numbers.reduce(myFunc);
 function myFunc(total, num) {
   return total - num;
 }
+
 console.log(ans);
